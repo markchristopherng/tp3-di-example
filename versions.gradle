@@ -1,0 +1,34 @@
+ext.deps = [:]
+def versions = [:]
+
+//gradle build plugins
+versions.kotlin = '1.3.41'
+versions.android_gradle_plugin = "3.5.0"
+versions.detekt_gradle_plugin = "1.0.0-RC15"
+versions.kotlinter_gradle_plugin = "1.24.1"
+
+//android google libraries
+versions.support = '28.0.0'    //Must match the SDK compile version.
+versions.legacy_support = '1.0.0'
+versions.arch_core = '1.0.0'
+versions.arch_lifecycle = '2.1.0'
+versions.constraint_layout = '1.1.3'
+versions.app_compat = '1.1.0'
+versions.core_ktx = '1.0.1'
+
+//Core libraries
+versions.rxjava = '2.2.0'
+versions.rxjava_android = '2.1.1'
+versions.rxlifecycle = '2.2.1'
+
+//java libraries
+versions.commons_io = '2.4'
+
+//toothpick
+versions.toothpick = '3.1.0'
+versions.toothpick_smoothie = '3.0.2'
+
+def deps = [:]
+ext.versions = versions
+
+
