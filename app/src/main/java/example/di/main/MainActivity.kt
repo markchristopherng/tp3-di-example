@@ -41,8 +41,8 @@ class MainActivity : BaseActivity(R.layout.activity_main) {
     override fun getScope(): Scope {
 
         return super.getScope().installModules(module {
-            bind<WelcomeDao>().toClass<WelcomeDao>()
-            bind<WelcomeManager>().toClass<WelcomeManager>()
+            bind<WelcomeDao>()
+            bind<WelcomeManager>()
         })
     }
 }
